@@ -66,8 +66,8 @@
     margin-bottom: 1rem; //same as .app-header
 	
 	.logo-icon {
-		width: 36px;
-    	height: 36px;
+		width: 67px;
+    	height: 67px;
 	}
 	
     .logo-text {
@@ -94,7 +94,8 @@
 	.nav-link {
 		display: block;
 		padding: 0.875rem 1rem;
-		color: $theme-text-color-primary;
+		color: #848484;
+		// color: $theme-text-color-primary;
 		position: relative;
 		display: block;
 		padding-left: 3rem;
@@ -103,7 +104,7 @@
 
 			color: $theme-color-primary;
 			background: lighten($theme-color-primary, 60%);
-			border-left: 3px solid $theme-color-primary;
+			border-left: 4px solid $theme-color-primary;
 			font-weight: 500;
 
 		}

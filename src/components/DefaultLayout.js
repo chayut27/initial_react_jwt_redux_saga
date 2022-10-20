@@ -2,13 +2,9 @@ import React, { Suspense } from "react";
 import { Outlet } from "react-router-dom";
 import Footer from "./Footer";
 import Header from "./Header";
+import Loading from "./Loading";
 import Sidebar from "./Sidebar";
 
-const loading = (
-  <div className="spinner-border text-primary spinner-border-sm" role="status">
-    <span className="visually-hidden">Loading...</span>
-  </div>
-);
 
 function DefaultLayout() {
   return (
@@ -24,7 +20,7 @@ function DefaultLayout() {
       <div className="app-wrapper">
         <div className="app-content pt-3 p-md-3 p-lg-4">
           <div className="container-xl">
-            <Suspense fallback={loading}>
+            <Suspense fallback={<Loading />}>
               <Outlet />
             </Suspense>
           </div>

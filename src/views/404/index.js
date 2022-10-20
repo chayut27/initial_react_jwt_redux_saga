@@ -24,9 +24,15 @@ function index() {
               <div className="mb-4">
                 Sorry, we can't find the page you're looking for.
               </div>
-              <Link className="btn app-btn-primary" to="/">
+              {/* <Link className="btn app-btn-primary" to="/">
                 Go to home page
-              </Link>
+              </Link> */}
+              <button className="btn app-btn-primary" to="/">
+                Go to home page
+              </button>
+              <button className="btn app-btn-primary" to="/">
+                Go to home page
+              </button>
             </div>
           </div>
           {/*//col*/}

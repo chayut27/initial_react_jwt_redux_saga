@@ -6,12 +6,15 @@ import rootSaga from './saga/rootSaga'
 
 const sagaMiddleware = createSagaMiddleware()
 
-const composedEnhancer = composeWithDevTools(
-    applyMiddleware(sagaMiddleware)
-)
+let composedEnhancer = applyMiddleware(sagaMiddleware)
+
+if (process.env.NODE_ENV === "development") {
+    composedEnhancer = composeWithDevTools(
+        applyMiddleware(sagaMiddleware),
+    )
+}
 
 const store = createStore(rootReducer, composedEnhancer)
-
 
 // then run the saga
 sagaMiddleware.run(rootSaga)

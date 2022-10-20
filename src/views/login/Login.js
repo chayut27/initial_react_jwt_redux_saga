@@ -60,9 +60,9 @@ function Login() {
           <div className="d-flex flex-column align-content-end">
             <div className="app-auth-body mx-auto">
               <div className="app-auth-branding mb-4">
-                <a className="app-logo" href="index.html">
+                <div className="app-logo">
                   <img className="logo-icon me-2" src={Logo} alt="logo" />
-                </a>
+                </div>
               </div>
 
               <h2 className="auth-heading text-center mb-5">
@@ -137,7 +137,7 @@ function Login() {
                     <div className="extra mt-3 row">
                       <div className="col">
                         <div className="forgot-password text-end">
-                          <a href="#">Forgot password?</a>
+                          {/* <a href="#">Forgot password?</a> */}
                         </div>
                       </div>
                       {/*//col-6*/}
